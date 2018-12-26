@@ -1,0 +1,9 @@
+Uusi projekti -> C# library
+
+Poista default-source file
+
+Lis‰‰ source-filet -> klikkaa oikealla napilla projektin nime‰ -> add files
+
+Lis‰‰ tarvittavat referencet -> project -> edit references -> .net assemby -> hae sellaisesta paikasta, jossa tiedostoa s‰ilytet‰‰n
+-lis‰‰ ainakin UnityEngine.dll (jos k‰ytt‰‰)
+-muut kirjaston referenssit, joihin viitataan

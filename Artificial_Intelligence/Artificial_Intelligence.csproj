@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{774E6F7C-62BB-4229-BBED-50719F8147D3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Artificial_Intelligence</RootNamespace>
+    <AssemblyName>Artificial_Intelligence</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Target_ohjaus">
+      <HintPath>..\Target_ohjaus\bin\Debug\Target_ohjaus.dll</HintPath>
+    </Reference>
+    <Reference Include="Peliukkeli_ohjaus">
+      <HintPath>..\Peliukkeli_ohjaus\bin\Debug\Peliukkeli_ohjaus.dll</HintPath>
+    </Reference>
+    <Reference Include="Ohjaus_2D">
+      <HintPath>..\Ohjaus_2D\bin\Debug\Ohjaus_2D.dll</HintPath>
+    </Reference>
+    <Reference Include="Ohjaus_laite">
+      <HintPath>..\Ohjaus_laite\bin\Debug\Ohjaus_laite.dll</HintPath>
+    </Reference>
+    <Reference Include="Menu">
+      <HintPath>..\Menu\bin\Debug\Menu.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Artificial_Intelligence_Handling.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

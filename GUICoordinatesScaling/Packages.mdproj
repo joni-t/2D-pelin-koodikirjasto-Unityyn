@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ItemType>PackagingProject</ItemType>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CCDA3CD-9EC7-446B-8D85-320A39F80D2A}</ProjectGuid>
+    <Packages>
+      <Packages>
+        <Package name="MSBuild (Visual Studio 2010) Sources">
+          <Builder targetFile="Vanhat_versiot\GUICoordinatesScaling_ver0.1.zip" format="MonoDevelop.Projects.FileFormat" ctype="SourcesZipPackageBuilder">
+            <ChildEntries>
+              <SolutionItemReference path="GUICoordinatesScaling.csproj" />
+            </ChildEntries>
+            <RootEntry path="GUICoordinatesScaling.sln" id=":root:" />
+          </Builder>
+        </Package>
+      </Packages>
+    </Packages>
+    <ReleaseVersion>0.1.1</ReleaseVersion>
+  </PropertyGroup>
+</Project>
